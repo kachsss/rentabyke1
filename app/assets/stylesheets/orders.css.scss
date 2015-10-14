@@ -49,14 +49,15 @@ color: #0033FF;
 }
 
 .rent{
-	background-image: url(/assets/bikemap_960.gif);
+	background-image: image-url("bikemap_960.gif");
+	/*background-image: url(/assets/bikemap_960.gif);*/
 	height: 668px;
 }
 
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 5px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999;
