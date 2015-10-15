@@ -1,13 +1,26 @@
 <% provide(:title, 'Главная') %>
 <% provide(:rew, 'Дом111') %>
 <!-- <h1> RSnet <%=yield(:rew)%></h1> -->
-<div class="center hero-unit">
-	
-	<h1>Доставим, куда скажете.<br>
+<div class="center hero-unit rent">
+	<h2>Аренда велосипедов в Таллине</h2>
+	<h5>Доставим, куда скажете.<br>
 			Заберем, где устанете.
-	</h1>
+	</h5>
   
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
-  <%= link_to image_tag("Tandem2.png", alt: "КУ-КУ"), '#' %>
+ 	<h5>Выберите велосипед</h5>
+  
+  	<br>
+	<div class="pic center ">
+	<%= link_to image_tag("man_on_the_bike2.png", class: "bike_icon pull-left", alt: "КУ-КУ"), '#' %>
+	<%= link_to image_tag("girl-on-the-bike2.png", class: "bike_icon pull-right", alt: "КУ-КУ"), '#' %>
+	
+	<%= link_to image_tag("boyandgirl1.png", class: "bike_icon pull-left", alt: "КУ-КУ"), '#' %>
+	<%= link_to image_tag("Tandem2.png", class: "bike_icon pull-right", alt: "КУ-КУ"), '#' %>
+	
+	<%= link_to "Забронировать!", signup_path, class: "btn btn-large btn-primary " %>
+
+	</div>
+  
+  
 </div>
 
