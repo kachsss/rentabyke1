@@ -1,4 +1,4 @@
-<% provide(:title, 'Дом') %>
+<% provide(:title, 'Главная') %>
 <% provide(:rew, 'Дом111') %>
 <!-- <h1> RSnet <%=yield(:rew)%></h1> -->
 <div class="center hero-unit">
@@ -6,13 +6,8 @@
 	<h1>Доставим, куда скажете.<br>
 			Заберем, где устанете.
 	</h1>
-  <h2>
-    This is the home page for the
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-
+  
   <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+  <%= link_to image_tag("Tandem2.png", alt: "КУ-КУ"), '#' %>
 </div>
 
-<%= link_to image_tag("Tandem2.png", alt: "КУ-КУ"), '#' %>
