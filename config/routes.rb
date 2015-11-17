@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+		
+	resources :users
 	
-  get 'users/new'
 
 	root 'orders#home'
+	
+	
 	
 	match '/home',    to: 'orders#home',    via: 'get'
 	match '/help',    to: 'orders#help',    via: 'get'
