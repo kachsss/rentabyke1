@@ -1,7 +1,14 @@
+// Place all the styles related to the FirstPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 // Place all the styles related to the orders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "bootstrap";
+/*@import "bootstrap-sprockets";
+@import "config"; // Overwrite bootstrap variables here!*/
+@import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic);
+
+
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -11,11 +18,24 @@
 
 /* header */
 
-#logo {
+.navbar-wrapper{
+	padding-top: 20px;
+	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.navbar{
+	border-radius: 4px;
+}
+
+.logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: #7F7777;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -32,7 +52,13 @@ html {
 }
 
 body {
-  padding-top: 60px;
+	
+	font-family: 'Roboto', sans-serif;
+		
+  /*padding-top: 60px;
+  background-image: image-url("clouds.jpg");*/
+  background-position:50% 50%;
+  background-repeat:no-repeat;
 }
 
 section {
@@ -43,40 +69,141 @@ textarea {
   resize: vertical;
 }
 
+/* Slider */
+
+#my_car.carousel{
+	width:900px;
+	margin-right: auto;
+    margin-left: auto;
+	
+}
+
+.carousel-control {
+  &.left, &.right {
+    background-image: none;
+    /*@include reset-filter();*/
+  }
+}
+
+.otstup{
+    margin-top:0px;
+}
+
+.carousel-indicators{
+	/*top:480px;
+	right:500px;*/
+	
+}
+
+.carousel-control{
+	top: 50%;
+}
+
+.carousel-control.right{
+	right:15px;
+}
+
+.chevron {
+    width:30%;
+    position:absolute;
+    top:40%;
+}
+
+
+
+.chevron-left {
+    left:35%;
+	top:10px;
+}
+.chevron-right {
+    right:35%;
+	top:10px;
+}
+
+.carousel-caption{
+	width: 100%;
+	left: inherit;
+	background-color: rgba(2, 2, 2, 0.3);
+	h3{
+		text-align:center;
+		color:#C5C5C5;
+	}
+}
+.carousel{
+	height: 500px;
+    margin-bottom: 60px;
+}
+.carousel-inner {
+	.item{
+		img{
+			position: absolute;
+   			top: 0;
+    		left: 0;
+   			min-width: 102%;
+    		height: 500px;
+			}
+		}
+}
+
+
 .center {
   text-align: center;
   h1{
   margin-bottom: 10px;
   }
-  h2{
-  color: #0033FF;
+  h1{
+  font-size:24px;
+  color: #3d4641;
+  }
+  .left{
+  text-align:left;
   }
 }
+.left_fs{
+	background-color: rgba(211, 211, 201, 0.1);
+	border:4px double black;
+	border-color:#333333;
+	padding:10px;
+}
+
 .pic {
 width: 400px;
 margin: auto;
 }
 
 .bike_icon{
-height: 150px;
+
 width: 150px;
 padding: 20px
 }
 
 
 .rent{
-	background-image: image-url("bikemap_960.gif");
-	/*background-image: url(/assets/bikemap_960.gif);*/
-	height: 668px;
+	background-repeat: repeat-y;
+	background-image: image-url("bikemap.gif");
+	height: initial;
+	/*background-image: image-url("kamenka_001.jpg");
+	/*background-image: url(/assets/bikemap_960.gif);
+	height: 525px;*/
+	padding:20px;
+	padding-top: 100px;
+	
+}
+
+.red{
+	color:#FF0000;
 }
 
 /* footer */
 
+
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #232A30;
   color: #999;
+  height: 30px;
   a {
     color: #555;
     &:hover {
@@ -94,6 +221,12 @@ footer {
       margin-left: 10px;
     }
   }
+}
+
+/* container */
+
+.container{
+	height: 100%;	
 }
 
 /* miscellaneous */
