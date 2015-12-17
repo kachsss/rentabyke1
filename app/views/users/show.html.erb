@@ -2,8 +2,11 @@
 	
 <div class="center hero-unit rent">
 	<div class="row">
-		<aside class="span4">
+		<aside class="col-sm-4">
 		  <section>
+			<% flash.each do |key, value| %>
+				<div class="alert alert-<%= key %>"><%= value %></div>
+			<% end %>
 			<h1>
 				<%= gravatar_for @user %>
 				<%= @user.name %>

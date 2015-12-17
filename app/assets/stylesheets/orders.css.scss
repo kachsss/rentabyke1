@@ -181,6 +181,7 @@ padding: 20px
 .rent{
 	background-repeat: repeat-y;
 	background-image: image-url("bikemap.gif");
+	min-height: 500px;
 	height: initial;
 	/*background-image: image-url("kamenka_001.jpg");
 	/*background-image: url(/assets/bikemap_960.gif);
@@ -195,9 +196,6 @@ padding: 20px
 }
 
 /* sidebar */
-.row{
-	background-color: rgba(211, 211, 201, 0.3);
-}
 
 aside {
   section {
