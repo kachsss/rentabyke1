@@ -31,6 +31,9 @@ group :test do
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
+group :production do
+  gem 'pg'
+end
 
 gem 'coffee-script-source', '1.8.0'
 gem 'coffee-rails', '4.0.1'
