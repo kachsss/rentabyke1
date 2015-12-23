@@ -101,6 +101,7 @@ GEM
     multi_test (0.1.2)
     nokogiri (1.6.7-x86-mingw32)
       mini_portile2 (~> 2.0.0.rc2)
+    pg (0.17.1-x86-mingw32)
     rack (1.5.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -187,6 +188,7 @@ DEPENDENCIES
   factory_girl_rails (= 4.2.0)
   jbuilder (~> 2.0)
   jquery-rails (= 3.0.4)
+  pg
   rails (= 4.1.8)
   rspec-rails (= 2.13.1)
   sass-rails (>= 3.2)
